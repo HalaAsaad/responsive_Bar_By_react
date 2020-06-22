@@ -1,0 +1,11 @@
+import axios from 'axios';
+const instancs = axios.create({
+    baseURL: 'https://apitest.i2-host.com/2.1/',
+    timeout: 10000,
+    headers: {
+        Accept: "application/json",
+        'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI3IiwianRpIjoiNjIyMTM5MzMxNjZmY2M3MTExY2UyMmNiZDFlMWZiNjRjZTZjNGVkNTU0NWJjMmM1ODY3ZTI1NDRkZDJhYjBhYjUwM2JmOWYzMDE5NmQ4YWEiLCJpYXQiOjE1ODE3NzA4NjUsIm5iZiI6MTU4MTc3MDg2NSwiZXhwIjoxNjEzMzkzMjY1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.C9smGlA9nVWG6Mfchkkzs-n-UMcpYfLc7wus_-FNHinFUbaM0k3JDsuQmlj4UAMod_IY0N3QEkHNG7Fwq0grOulchitB_uax4kYzoTJnwAeg8-QonODf8ctnRBBIyYdRu3gDc58Txrl6DZ9ok-HqxvU3Ubs3CJ79Ev9PDOi_xwqsfIU9cA2fZyhYNsN_S87MwCpuJzGsmKMBcJY3M6QplUFk4nVuFh0fCqVl5HDLHDzkC33H9eVUkgYHmiTeCglsFFyQsco14Jt3BHuL5BVg0kTYTCz2j6L2e07j-_kWoRhraim1mdZuY63chWER7y7qCVYrhOWsOpMdOd44IARXArKSSC0_TvxBDX-1ziPtUo2AVplYbQlLXVy2kopFxTttdqiVc1FDnE2Ea7pX-ez3pzUiEk-rJun1hf2ahWWywqe5bzv4Woqz8QmPY-2MR13dn9t-pW7mB0WANFqRwnSlHsu5KyT6vOnsNzQvD7yiOEOB1PFBm8bABlZESbxx7V_xhXa-tQ9Yy6hd_cdLZFzydRLbTt_h3MtYrzGOKLbdlT8LHJD4x2nt3ttdyUVgl7IQhlCaDbN9odzAm3yL7bT0EOWhUg9rfHFEiCHPXaAIqEIJ4z3MPara5QZuXmdOuUinpTJm1KCYsNYyUmY2D0cN3TAFdGGMTokG4ChXh3AeeR8'
+    }
+});
+
+export default instancs;

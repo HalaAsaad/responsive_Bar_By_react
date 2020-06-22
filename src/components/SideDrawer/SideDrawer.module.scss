@@ -1,0 +1,68 @@
+.side_drawer_show{
+    background-color: rgb(216, 149, 149);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    clip-path: circle(100px at -2% 6%);
+    -webkit-clip-path:circle(1000px at -2% 6%); 
+    transition: all 1.5s ease-out; 
+
+
+    .toggle {
+        align-self: flex-start;
+        margin: 20px;
+    }
+    .side_drawer_ul {
+        display: flex;
+        flex-direction: column;
+        
+        .nav {
+            margin-top: 20px;
+        }
+
+      
+    }
+}
+
+
+
+.side_drawer_hide{
+    background-color: rgb(216, 149, 149);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    clip-path: circle(10px at -2% 0%);
+    -webkit-clip-path:circle(10px at -2% 0%); 
+    transition: all 1.5s ease-out; 
+
+
+    .toggle {
+        align-self: flex-start;
+        margin: 20px;
+    }
+    .side_drawer_ul {
+        display: flex;
+        flex-direction: column;
+
+        .nav {
+            margin-top: 20px;
+        }
+
+    }
+}
+
+@media (min-width: 769px) {
+    .side_drawer {
+        display: none;
+    }
+}
